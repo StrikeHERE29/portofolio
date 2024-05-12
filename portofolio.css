@@ -127,3 +127,53 @@ h4{
 p{
   margin-left: 2rem;
 }
+
+/*End of main*/
+
+/* Start of footer*/
+
+.footer{
+  background-color: hsl(208, 100%, 58%);
+}
+
+.footer-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footer-img{
+  margin: 3rem;
+  margin-left: 5rem;
+  margin-right: -5rem ;
+  min-width:60rem;
+  border-radius: 10px;
+}
+
+.contact{
+  margin-right: 10rem;
+  color: white;
+  margin-top: 10%;
+}
+
+.footer-button{
+  background-color: hsl(208, 100%, 58%);
+  margin-left: 2rem;
+}
+
+.a-footer{
+  font-size: 30px;
+}
+
+h1{
+  margin-left: 4rem;
+  font-size: 35px;
+  letter-spacing: 1px;
+}
+
+.p-footer{
+  font-size: 20px;
+  font-weight: 300;
+}
+
+/* End of footer*/
