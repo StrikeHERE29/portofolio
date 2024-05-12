@@ -6,6 +6,7 @@ body{
   margin: 0;
   width: 100vw;
   height: 80vh;
+  overflow-x: hidden;
 }
 /*Start of header*/
 
@@ -16,7 +17,7 @@ p{
 }
 .svg{
   position: relative;
-
+  display: none;
 }
 h2{
   margin-left: 2rem;
@@ -145,8 +146,8 @@ p{
 .footer-img{
   margin: 3rem;
   margin-left: 5rem;
-  margin-right: -5rem ;
-  min-width:60rem;
+ 
+  max-width:60rem;
   border-radius: 10px;
 }
 
@@ -177,3 +178,82 @@ h1{
 }
 
 /* End of footer*/
+
+
+/* Start of media query for smartphone*/
+
+@media only screen and (max-width: 480px) {
+  
+body{
+  overflow-x: hidden;
+}
+
+
+.svg{
+  display: none;
+}
+
+.header{
+  margin-bottom: 1000px;
+}
+
+.phone-svg{
+  position: relative;
+}
+
+
+
+.header-content{
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+.header-img{
+  width: 350px;
+  height: 350px;
+  margin-left: 4rem;
+}
+
+.about{
+  box-shadow: none;
+  max-width: 14rem;
+  margin-left: 8rem;
+}
+
+.project-container{
+  margin-right: 14rem;
+}
+
+h3{
+  margin-left: 150px;
+}
+.footer{
+  position: relative;
+}
+
+.footer-container{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.footer-img{
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  margin-left: 0;
+  margin-bottom: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.contact{
+  max-width: 20rem;
+  
+}
+
+}
