@@ -182,7 +182,7 @@ h1{
 
 /* Start of media query for smartphone*/
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 767px) {
   
 body{
   overflow-x: hidden;
@@ -194,7 +194,7 @@ body{
 }
 
 .header{
-  margin-bottom: 900px;
+  margin-bottom: 850px;
 }
 
 .phone-svg{
@@ -212,17 +212,30 @@ body{
   justify-content: center;
   
 }
+
+.img-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
 .header-img{
-  width: 300px;
-  height:auto ;
-  margin-left: 10px;
-  margin-top: 10px;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .about{
+  margin-top: 8rem;
   box-shadow: none;
   max-width: 14rem;
   margin-left: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
 }
 
 .project-container{
@@ -257,5 +270,59 @@ h3{
   max-width: 20rem;
   
 }
+
+.footer-buttons{
+  display: flex;
+}
+
+}
+
+/* End of media query for smartphone*/
+
+/* Start of media query for tablets*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+  .header-img{
+    width: 50vw;
+    height: auto;
+    margin-left: -370px;
+    
+  }
+
+  .img-container{
+    position: relative;
+    z-index: 1;
+    
+  }
+
+  .about{
+  position: absolute;
+  min-height: 340px;
+  width: 270px;
+  top: 5rem;
+  left: -5rem;
+  z-index: 0;
+  padding-left: 170px;
+  shape-outside: content-box;
+  line-break: auto;
+  
+  }
+  
+  .main{
+    margin-top: 400px;
+  }
+
+  
+  .projects{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 120px;
+  }
+
+  .project-container{
+    margin-left: -120px;
+  }
+
 
 }
